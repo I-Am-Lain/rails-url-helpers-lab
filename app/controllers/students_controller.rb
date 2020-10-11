@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
 
     @student.save
 
-    redirect_to "/students/#{params[:id]}"
+    redirect_to student_path(@student)
   end
 
   private
